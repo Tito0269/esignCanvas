@@ -15,6 +15,9 @@ body {
 h3 {
     margin: 10px 15px;
 }
+h1 {
+    margin: 10px 15px;
+}
 
 header {
     background: #273B47;
@@ -30,7 +33,7 @@ section{
     flex:1;
 }
 
-header h1 {
+header {
     color: white;
     font-weight: 500;
     padding-left: 15px;
