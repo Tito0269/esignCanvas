@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Canvas</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+
+			<h1 align="center">Dibuja con Canvas usando el Mouse o Una pantalla Tactil y Crea una Imagen</h1>
+
+
+	</header>
+	<div class="contenedor">
+
+		<div class="row">
+			<div class="col-md-12">
+		 		<canvas id="draw-canvas" width="620" height="360">
+		 			No tienes un buen navegador.
+		 		</canvas>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<input type="button" class="button" id="draw-submitBtn" value="Crear Imagen"></input>
+				<input type="button" class="button" id="draw-clearBtn" value="Borrar Canvas"></input>
+
+						<label>Color</label>
+						<input type="color" id="color">
+						<label>Tamaño Puntero</label>
+						<input type="range" id="puntero" min="1" default="1" max="5" width="10%">
+
+
+			</div>
+
+		</div>
+
+		<br/>
+		<div class="row">
+			<div class="col-md-12">
+				<textarea id="draw-dataUrl" class="form-control" rows="5">Para los que saben que es esto:</textarea>
+			</div>
+		</div>
+		<br/>
+		<div class="contenedor">
+			<div class="col-md-12">
+				<img id="draw-image" src="" alt="Tu Imagen aparecera Aqui!"/>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+			<h3>Elaborado por Tito, Agosto 2017 </h3>
+	</footer>
+	<!-- Scripts -->
+
+
+	<script src="./canvas.js"></script>
+</body>
+</html>
