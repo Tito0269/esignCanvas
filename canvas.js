@@ -128,8 +128,7 @@
       Devuelve el tamaño de un elemento y su posición relativa respecto
       a la ventana de visualización (viewport).
     */
-		return
-		{
+		return{
 			x: mouseEvent.clientX - rect.left,
 			y: mouseEvent.clientY - rect.top
 		};
@@ -144,8 +143,7 @@
       Devuelve el tamaño de un elemento y su posición relativa respecto
       a la ventana de visualización (viewport).
     */
-		return
-		{
+		return{
 			x: touchEvent.touches[0].clientX - rect.left, // Popiedad de todo evento Touch
 			y: touchEvent.touches[0].clientY - rect.top
 		};
